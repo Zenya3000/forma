@@ -1,0 +1,198 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+.main h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+.test_form {
+	width: 100%;
+	max-width: 320px;
+	height: 100%;
+	padding-top: 50px;
+	margin: auto;
+	display: block;
+}
+.email_name {
+	height: 40px;
+	width: 100%;
+	position: relative;
+	border: none;
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #cecece;
+
+}
+.email_name:focus {
+	outline: none;
+}
+.line {
+	display: block;
+	position: relative;
+	width: 0%;
+	height: 2px;
+	text-align: center;
+	margin: auto;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+.name_pole {
+	margin-bottom: 20px;
+	position: relative;
+}
+.name_pole:hover .line {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	background: #f0ad4e;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    z-index: 5;
+}
+.name_pole:active .line,
+.name_pole:focus .line
+ {
+	width: 0%;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	background: #f0ad4e;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    z-index: 5;
+}
+.email_name.error{
+	box-shadow: 0px 0px 7px 1px red;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 10;
+}
+.error_znak {
+	position: absolute;
+	right: -20px;
+	top: 30px;
+	display: none;
+	width: 10px;
+    height: 27px;
+    background-image: url(../img/znak-u458.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px;
+    animation: push 1s infinite;
+    -moz-animation: push 1s infinite;
+    -o-animation: push 1s infinite;
+    -webkit-animation: push 1s infinite;
+}
+@keyframes push {
+	0% {
+		-moz-transform: rotate(-10deg); /* Для Firefox */
+	    -ms-transform: rotate(-10deg); /* Для IE */
+	    -webkit-transform: rotate(-10deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: rotate(-10deg); /* Для Opera */
+	    transform: rotate(-10deg);
+	}
+	50% {
+	   -moz-transform: rotate(10deg); /* Для Firefox */
+	    -ms-transform: rotate(10deg); /* Для IE */
+	    -webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: rotate(10deg); /* Для Opera */
+	    transform: rotate(10deg);
+	}
+	100% {
+		-moz-transform: rotate(-10deg); /* Для Firefox */
+	    -ms-transform: rotate(-10deg); /* Для IE */
+	    -webkit-transform: rotate(-10deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: rotate(-10deg); /* Для Opera */
+	    transform: rotate(-10deg);
+	}
+}
+.email_name.ok{
+	box-shadow: 0px 0px 7px 1px #35b221;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+    z-index: 10;
+}
+.ok_znak {
+	position: absolute;
+    right: -30px;
+    top: 30px;
+    display: none;
+    width: 20px;
+    height: 27px;
+    background-image: url(../img/pipa.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 19px;
+}
